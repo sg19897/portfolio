@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jyoti | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Jyoti.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="greeting">Hi, I'm</p>
+      <h1>Jyoti <span>Frontend Developer</span></h1>
+      <p class="tagline">I build beautiful, responsive web experiences.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="avatar-placeholder">JG</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>I'm a passionate frontend developer who loves crafting clean and functional user interfaces. I started my journey in 2019 and have been building web apps ever since. I enjoy turning complex problems into simple, beautiful designs.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Next.js</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+      <div class="skill-card">Figma</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A real-time weather app using the OpenWeather API with search functionality.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </div>
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>A feature-rich todo app with filters, local storage, and drag-and-drop.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </div>
+      <div class="project-card">
+        <h3>Movie Search</h3>
+        <p>Search and browse movies using the OMDB API, built with React.</p>
+        <div class="tags"><span>React</span><span>API</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+    <p id="form-msg" class="form-msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2020 Jyoti. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
